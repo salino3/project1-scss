@@ -1,0 +1,178 @@
+@import url('./base.scss');
+
+
+nav{
+    padding: 1em;
+    border: solid greenyellow;
+    display: grid;
+    grid-template-columns: 15em minmax(auto, 50%) 12em;
+}
+
+.divUl{
+   display: grid; 
+grid-template-columns: 1fr;
+ grid-template-rows: 1fr 1fr;
+   white-space: nowrap;
+
+}
+
+button{
+    float: right;
+    margin: 1em;
+    margin-right: 2em;
+}
+
+.ul1{
+    display: grid;
+       grid-template-areas: 
+       "a b empty c d";
+        gap: 0.5em;
+
+.li1 {
+    grid-area: a;
+}
+
+.li2 {
+    grid-area: b;
+}
+
+.emptySpan{
+    grid-area: empty;
+}
+
+.li3 {
+    grid-area: c;
+}
+
+
+.li4 {
+    grid-area: d;
+ }
+}
+
+.ul2 {
+    display: grid;
+    grid-template-areas:
+        "e f empty2 g h";
+    gap: 0.5em;
+
+.li5 {
+    grid-area: e;
+}
+
+.li6 {
+    grid-area: f;
+}
+
+.emptySpan2 {
+    grid-area: empty2;
+}
+
+.li7 {
+    grid-area: g;
+}
+
+.li8 {
+    grid-area: h;
+ }
+}
+
+
+#imgNav{
+    justify-self: end;
+}
+
+
+main{
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: 80% minmax(auto, 20%);
+
+ .divMain1{
+    display: grid;
+    gap: 1em;
+    
+ }
+
+
+.divMain1 div{
+    border: solid;
+    padding: 5em;
+}
+
+.divN1{
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+
+.divN2{
+    grid-column: 3 / 4;
+    grid-row: 1 / 5;
+}
+
+.divN3{
+    grid-column: 1 / 3;
+    grid-row: 3 / 5;
+}
+
+.divN4{
+    grid-column: 1 / 4;
+    grid-row: 5 / 7;
+}
+
+aside ul{
+    // margin-left: 1em;
+    display: grid;
+    grid-template-rows: repeat(7, minmax(auto, 4em));
+    grid-template-columns: 1fr;
+    justify-items: center;
+ }
+}
+
+footer{
+    border: solid;
+    color: khaki;
+    margin-top: 1em;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: auto auto;
+    
+    & div{
+        border: solid;
+        padding: 5em;   
+    }
+
+    & div:nth-child(1){
+        color: red;
+        border-radius: 200px 0px 250px 20px    }
+    
+    & div:nth-last-child(1){
+        color:aquamarine;
+        border-radius: 250px 20px 200px 0px
+    }
+
+}
+
+@media screen and (max-width: 50em) {
+ 
+    #imgNav {
+            justify-self: start;
+            margin-left: 1em;
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

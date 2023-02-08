@@ -1,0 +1,41 @@
+$primaryColor: rgb(255, 194, 82);
+$secondaryColor: rgb(190, 190, 34);
+$textColor: rgb(11, 11, 192);
+
+*{
+    font-family: sans-serif;
+    border-radius: 15px;
+}
+
+body{
+    background-color: darkgoldenrod;
+    color: $textColor;
+}
+
+button{
+ background-color: $secondaryColor;
+ border: none;
+ padding: 0.5em;
+ color: $textColor;
+}
+
+button:active{
+    border: solid 3px yellow;
+    font-size: 75%;
+}
+
+input{
+  text-align: center;
+  color: $textColor;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color:darkcyan;
+}
+
+
+
